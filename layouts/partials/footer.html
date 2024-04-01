@@ -1,0 +1,12 @@
+<footer
+  class="bg-dark text-light text-center p-3 flex flex-col gap-4 mt-8 py-8 border-t-[1px] border-black/50"
+>
+  <div class="flex items-center gap-4 justify-center">
+    <a href="/sitemap.xml" class="text-light">Sitemap</a>
+    <a href="/posts" class="text-light">Posts</a>
+    <a href="/categories" class="text-light">Categories</a>
+  </div>
+  <div>
+    <p>&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+  </div>
+</footer>

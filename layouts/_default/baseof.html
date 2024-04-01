@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ $styles := resources.Get "style.css" }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    <title>{{.Title}}</title>
+  </head>
+  <body class="bg-primary container">
+    {{ partial "navbar" . }} {{ block "main" . }} {{ end }} {{ partial "footer"
+    . }}
+  </body>
+</html>

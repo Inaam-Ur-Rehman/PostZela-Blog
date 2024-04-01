@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on POSTZELA</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on POSTZELA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Apr 2024 19:34:32 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Github Copilot for Free</title>
+      <link>http://localhost:1313/posts/how-to-use-github-copilot-for-free/</link>
+      <pubDate>Mon, 01 Apr 2024 19:34:32 +0500</pubDate>
+      <guid>http://localhost:1313/posts/how-to-use-github-copilot-for-free/</guid>
+      <description>Github Copilot is an AI-powered code completion tool that helps developers write code faster and more efficiently. It can be used with a variety of programming languages and editors. In this tutorial, we&amp;rsquo;ll show you how to use Github Copilot for free.&#xA;Step 1: Sign Up for Github Copilot The first step to using Github Copilot is to sign up for the service. You can do this by going to the Github Copilot website and creating an account.</description>
+    </item>
+    <item>
+      <title>How to Use Chatgpt4 Free</title>
+      <link>http://localhost:1313/posts/how-to-use-chatgpt4-free/</link>
+      <pubDate>Sat, 30 Mar 2024 15:48:19 +0500</pubDate>
+      <guid>http://localhost:1313/posts/how-to-use-chatgpt4-free/</guid>
+      <description>ChatGPT4 is a powerful AI model that can generate human-like text. It can be used for a variety of tasks, such as answering questions, generating text, and more. In this tutorial, we&amp;rsquo;ll show you how to use ChatGPT4 for free.&#xA;Step 1: Sign Up for OpenAI API The first step to using ChatGPT4 is to sign up for the OpenAI API. You can do this by going to the OpenAI website and creating an account.</description>
+    </item>
+  </channel>
+</rss>

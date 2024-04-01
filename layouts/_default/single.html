@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold my-6">{{.Title}}</h1>
+<div>
+  Published By : {{ range (.GetTerms "authors") }}
+  <a href="{{ .Permalink }}">{{ .Name }}</a>
+  {{ end }}
+</div>
+<p class="my-6">
+  <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+  ({{ .ReadingTime }} min read) ({{ .WordCount }} words)
+</p>
+{{ partial "share-buttons.html" . }}
+<div class="bg-sky-200/50 my-8 p-2 text-xl rounded-md">
+  <h2 class="text-2xl font-bold my-2">Table of Contents</h2>
+  {{ .TableOfContents }}
+</div>
+<div class="prose-base lg:prose-lg xl:prose-xl w-full prose-headings:font-bold">
+  {{ .Content }}
+</div>
+{{ end }}

@@ -1,0 +1,38 @@
+{{ define "main" }} {{if eq .RelPermalink "/categories/"}}
+<h1 class="text-3xl md:text-5xl font-bold uppercase my-6">{{ .Title }}</h1>
+<div class="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+  {{ range .Paginator.Pages }}
+  <a
+    href="{{ .Permalink }}"
+    class="border-[1px] border-black/50 p-4 rounded-md hover:bg-black/10 transition-colors"
+  >
+    <p class="text-2xl font-bold">{{ .Title }}</p>
+    <p class="text-xl my-2">{{ len .Paginator.Pages }} posts</p>
+  </a>
+  {{ end }}
+</div>
+{{else}}
+<h1 class="text-3xl md:text-5xl font-bold uppercase my-6">{{ .Title }}</h1>
+{{ range .Paginator.Pages }}
+<article class="border-black/20 border-b-[1px] pb-4 last:border-b-0">
+  <h2 class="font-bold text-2xl">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+  <p class="text-xl my-2">{{ .Params.excerpt}}</p>
+  <div class="flex items-center gap-4">
+    {{ range (.GetTerms "categories") }}
+    <a href="{{ .Permalink }}" class="bg-secondary/20 px-2 py-1 rounded-md"
+      >{{ .Name }}</a
+    >
+    {{ end }}
+  </div>
+  <div class="my-4 flex items-center gap-4 flex-wrap">
+    {{ range (.GetTerms "authors") }}
+    <a href="{{ .Permalink }}" class="bg-sky-200/50 px-2 py-1 rounded-md"
+      >{{ .Name }}</a
+    >
+    {{ end }}
+  </div>
+  <p>{{ dateFormat .Site.Params.dateFormat .Date }}</p>
+</article>
+{{ end }} {{end}} {{ end }}

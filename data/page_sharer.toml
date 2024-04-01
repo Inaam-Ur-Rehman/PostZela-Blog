@@ -1,0 +1,12 @@
+# links:
+#   - id: x
+#     url: "https://twitter.com/intent/tweet?url={url}&text={title}"
+#     title: X
+#     icon: brands/x
+#     enable: true
+[[links]]
+id = "twitter"
+url = "https://twitter.com/intent/tweet?url={url}&text={title}"
+title = "Twitter"
+icon = "brands/twitter"
+enable = true

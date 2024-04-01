@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div
+  class="flex items-center overflow-x-scroll no-scrollbar gap-6 border-b-[1px] border-black/10 pb-2"
+>
+  {{range (.Site.Taxonomies.categories)}}
+  <a href="{{.Page.Permalink}}" class="capitalize">{{.Page.Title}}</a>
+  {{end}}
+</div>
+<div class="my-4 flex flex-col gap-6">
+  {{ range .Paginator.Pages }}
+  <article class="border-black/20 border-b-[1px] pb-4 last:border-b-0">
+    <h2 class="font-bold text-2xl">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="text-xl my-2">{{ .Params.excerpt}}</p>
+    <div class="flex items-center gap-4">
+      {{ range (.GetTerms "categories") }}
+      <a href="{{ .Permalink }}" class="bg-secondary/20 px-2 py-1 rounded-md"
+        >{{ .Name }}</a
+      >
+      {{ end }}
+    </div>
+    <div class="my-4 flex items-center gap-4 flex-wrap">
+      {{ range (.GetTerms "authors") }}
+      <a href="{{ .Permalink }}" class="bg-sky-200/50 px-2 py-1 rounded-md"
+        >{{ .Name }}</a
+      >
+      {{ end }}
+    </div>
+    <p>{{ dateFormat .Site.Params.dateFormat .Date }}</p>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

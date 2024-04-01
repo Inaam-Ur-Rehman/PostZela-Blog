@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on POSTZELA</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on POSTZELA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Apr 2024 19:34:32 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/categories/ai/</link>
+      <pubDate>Mon, 01 Apr 2024 19:34:32 +0500</pubDate>
+      <guid>http://localhost:1313/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Copilot</title>
+      <link>http://localhost:1313/categories/copilot/</link>
+      <pubDate>Mon, 01 Apr 2024 19:34:32 +0500</pubDate>
+      <guid>http://localhost:1313/categories/copilot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/categories/github/</link>
+      <pubDate>Mon, 01 Apr 2024 19:34:32 +0500</pubDate>
+      <guid>http://localhost:1313/categories/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT4</title>
+      <link>http://localhost:1313/categories/chatgpt4/</link>
+      <pubDate>Sat, 30 Mar 2024 15:48:19 +0500</pubDate>
+      <guid>http://localhost:1313/categories/chatgpt4/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
